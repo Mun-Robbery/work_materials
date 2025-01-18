@@ -1,0 +1,49 @@
+dataset:
+  name: ds2
+  columns:
+  - Id
+  - MSSubClass
+  - LotFrontage
+  - YearRemodAdd
+  - MasVnrArea
+  - BsmtFinSF1
+  - BsmtFinSF2
+  - BsmtUnfSF
+  - TotalBsmtSF
+  - 1stFlrSF
+  - 2ndFlrSF
+  - LowQualFinSF
+  - GrLivArea
+  - BsmtFullBath
+  - BsmtHalfBath
+  - FullBath
+  - HalfBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - TotRmsAbvGrd
+  - Fireplaces
+  - GarageYrBlt
+  - GarageCars
+  - GarageArea
+  - WoodDeckSF
+  - OpenPorchSF
+  - EnclosedPorch
+  - 3SsnPorch
+  - ScreenPorch
+  - Cat_FV
+  - Cat_RH
+  - Cat_RL
+  - Cat_RM
+  - Cat_Grvl
+  - Cat_Pave
+  target: SalePrice
+model:
+  _target_: catboost.CatBoostRegressor
+  learning_rate: 0.05
+  n_estimators: 100
+  max_depth: 9
+  silent: true
+params:
+  learning_rate: 0.1
+  n_estimators: 80
+  max_depth: 4

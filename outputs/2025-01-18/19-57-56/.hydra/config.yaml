@@ -1,0 +1,47 @@
+dataset:
+  name: ds1
+  columns:
+  - Id
+  - MSSubClass
+  - LotFrontage
+  - LotArea
+  - OverallQual
+  - OverallCond
+  - YearBuilt
+  - YearRemodAdd
+  - MasVnrArea
+  - BsmtFinSF1
+  - BsmtFinSF2
+  - BsmtUnfSF
+  - TotalBsmtSF
+  - 1stFlrSF
+  - 2ndFlrSF
+  - LowQualFinSF
+  - GrLivArea
+  - BsmtFullBath
+  - BsmtHalfBath
+  - FullBath
+  - HalfBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - TotRmsAbvGrd
+  - Fireplaces
+  - GarageYrBlt
+  - GarageCars
+  - GarageArea
+  - WoodDeckSF
+  - OpenPorchSF
+  - EnclosedPorch
+  - 3SsnPorch
+  - ScreenPorch
+  - PoolArea
+  - MiscVal
+  - MoSold
+  - YrSold
+  - SalePrice
+  target: SalePrice
+model: lgbm
+params:
+  learning_rate: 0.1
+  n_estimators: 80
+  max_depth: 4

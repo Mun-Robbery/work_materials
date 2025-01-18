@@ -1,0 +1,7 @@
+model: lgbm
+params:
+  learning_rate: 0.1
+  n_estimators: 80
+  max_depth: 4
+  reg:
+    alpha: 0.5

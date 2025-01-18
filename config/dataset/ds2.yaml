@@ -1,0 +1,3 @@
+name: ds2
+columns: [Id,MSSubClass,LotFrontage,YearRemodAdd,MasVnrArea,BsmtFinSF1,BsmtFinSF2,BsmtUnfSF,TotalBsmtSF,1stFlrSF,2ndFlrSF,LowQualFinSF,GrLivArea,BsmtFullBath,BsmtHalfBath,FullBath,HalfBath,BedroomAbvGr,KitchenAbvGr,TotRmsAbvGrd,Fireplaces,GarageYrBlt,GarageCars,GarageArea,WoodDeckSF,OpenPorchSF,EnclosedPorch,3SsnPorch,ScreenPorch, Cat_FV,Cat_RH,Cat_RL,Cat_RM,Cat_Grvl,Cat_Pave]
+target: SalePrice
