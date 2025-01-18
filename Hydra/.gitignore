@@ -1,0 +1,5 @@
+*.csv
+Hydra\multirun*.yaml
+Hydra\catboost_info*.yaml
+Hydra\outputs*.yaml
+
